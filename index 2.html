@@ -1,0 +1,134 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+    <script src="q2.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0px;
+        }
+
+        body{
+        background: url(https://thumbs.gfycat.com/ComplexFrailGrackle-max-1mb.gif) no-repeat center/cover;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+        table {
+            width: 100%;
+            font-size: 2vw;
+            font-family: 'Pacifico', cursive;
+            padding-top: 20px;
+        }
+
+        .right {
+            text-align: right;
+
+        }
+
+        .right a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.6vw;
+        }
+
+        .right a:hover {
+            color:white;
+            background: black;
+        }
+
+        .head {
+            font-size: 2vw;
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+        }
+        p{
+            text-align: center;
+            font-size: 2.6vw;
+            font-family:monospace;
+        }
+        ol{
+            align-items: center;
+            padding-left: 40px;
+            font-family: cursive;
+        }
+        li{
+            padding: 40px;
+            margin: 10px;
+            width: 100%;
+            font-size: 2vw;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                Name: Manvendra Pratap Singh<br>
+                Roll Number: 2006034<br>
+                
+            </td>
+            <td class="right">
+                <a href="">GO TO NEXT QUESTION =>>></a><br>
+                <a href=""> <<<= GO TO PREVIOUS QUESTION</a><br>
+                <a href=""><b><u>SEE CODE</u></b></a>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <div class="head">
+        ASSIGNMENT 5
+    </div>
+    <div class="head">
+        Question 1: Show the Scope of variables in JS using HTML page
+    </div>
+    <p>
+        Here are some of the examples of the scope of variable:
+    </p>
+    <ol>
+        <li>
+            var y = 20;
+
+            function bar() {
+            var y = 200;
+
+            function baz() {
+            console.log(y);
+            }
+
+            baz();
+            }
+
+            bar();
+            <b>OUTPUT:</b> 200
+        </li>
+        <li>
+            function say(message) {
+                if(!message) {
+                    let greeting = 'Hello';
+                    console.log(greeting);
+                }
+                console.log(greeting);
+            }
+            
+            say();
+            <b>OUTPUT:</b>Hello
+        </li>
+        <li>
+            function getCounter() {
+                'use strict'
+                counter = 10;
+                return counter;
+            }
+            console.log(getCounter());
+            <b>OUTPUT:</b> error
+        </li>
+    </ol>
+</body>
+
+</html>
